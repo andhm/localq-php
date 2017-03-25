@@ -28,3 +28,13 @@ if (-1 == $objLocalq->push(json_encode($data), $method, $class)) {
   var_dump($objLocalq->getError());
 }
 ```
+```php
+处理方法示例
+class UserCls {
+  public function UserMtd($data) {
+    // 处理$data
+    var_dump($data);
+    return 0; // 0 succ; -1 fail
+  }
+}
+```
