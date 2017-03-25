@@ -12,6 +12,12 @@ $./configure --with-php-config=/path/to/php-config
 $make && make install
 ```
 ## Usage
+```
+配置php.ini
+[localq]
+localq.sock_path=/path/to/localq-sock-unix-file
+
+```
 ```php
 $objLocalq = new Localq();
 $data = array('hello');
