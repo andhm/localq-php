@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("localq", "for localq support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("localq", "enable localq support", "no");
+
+if (PHP_LOCALQ != "no") {
+	EXTENSION("localq", "localq.c");
+}
+
